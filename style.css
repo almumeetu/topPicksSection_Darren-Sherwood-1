@@ -16,7 +16,7 @@ body, ul {
     margin-bottom: 20px;
   }
   
-  .scrollable-list-x {
+  .scrollable-list {
     overflow-x: auto;
     white-space: nowrap;
     padding-bottom: 20px;
@@ -28,12 +28,13 @@ body, ul {
     border: 1px solid #ddd;
     padding: 15px;
     border-radius: 8px;
-    min-width: 250px; /* Set a minimum width for each item */
+    min-width: 20%; /*
+     Set a minimum width for each pick */
   }
   
   .pick img {
-    max-width: 100%;
-    height: auto;
+    max-width: 250px;
+    height: 200px;
     border-radius: 8px;
     margin-bottom: 10px;
   }
@@ -61,7 +62,7 @@ body, ul {
   .btn:hover {
     background-color: #2980b9;
   }
-  
+
   /* Media query for mobile responsiveness */
   @media (max-width: 600px) {
     .top-picks {
