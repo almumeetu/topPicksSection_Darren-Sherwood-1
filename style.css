@@ -22,7 +22,10 @@ ul {
   white-space: nowrap;
   padding-bottom: 20px;
 
+}
 
+.scrollable-list p{
+  white-space: normal;
 }
 
 .pick {
@@ -52,7 +55,7 @@ ul {
 .pick p {
   color: #555;
   margin-bottom: 15px;
-  white-space: nowrap;
+  white-space: wrap;
 }
 
 .pick-author{
