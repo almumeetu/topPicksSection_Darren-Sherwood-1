@@ -5,7 +5,6 @@ body, ul {
   }
   
   .top-picks {
-    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -28,8 +27,7 @@ body, ul {
     border: 1px solid #ddd;
     padding: 15px;
     border-radius: 8px;
-    min-width: 20%; /*
-     Set a minimum width for each pick */
+    /* Set a minimum width for each pick */
   }
   
   .pick img {
