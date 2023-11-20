@@ -1,25 +1,36 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
 
-body{
+body {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #efefef;
 }
-.slide-content{
+
+.slide-content {
     margin: 0 40px;
 }
-.card{
+
+.card {
     border-radius: 25px;
     background: #fff;
+    width: 320px;
 }
-.card-image{
+
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.card-image {
     position: relative;
     height: 150px;
     width: 150px;
@@ -27,7 +38,8 @@ body{
     background: #fff;
     padding: 3px;
 }
-.card-image .card-img{
+
+.card-image .card-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
