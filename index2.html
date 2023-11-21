@@ -1,64 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My top picks</title>
-
-    <!--CSS-->
-    <link rel="stylesheet" href="style2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Picks</title>
+  <link rel="stylesheet" href="style2.css">
 </head>
-
 <body>
-    <div class="carousel">
-        <div class="carousel-inner">
-            <div class="card"> <!-- First card -->
-               
-            </div>
-            <div class="card"> <!-- Second card -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laborum debitis ipsum odit ex deleniti, quam ab aut, et consectetur voluptate in voluptatem nostrum? Hic aliquam adipisci harum assumenda dignissimos.</p>
-                <!-- Card content -->
-            </div>
-            <div class="card"> <!-- Second card -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laborum debitis ipsum odit ex deleniti, quam ab aut, et consectetur voluptate in voluptatem nostrum? Hic aliquam adipisci harum assumenda dignissimos.</p>
-                <!-- Card content -->
-            </div>
-            <div class="card"> <!-- Second card -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laborum debitis ipsum odit ex deleniti, quam ab aut, et consectetur voluptate in voluptatem nostrum? Hic aliquam adipisci harum assumenda dignissimos.</p>
-                <!-- Card content -->
-            </div>
-            <!-- Add more cards as needed -->
+    <div class="my-top-picks">
+        <div class="top-picks">
+            <ul class="top-picks-list">
+                <li>JavaScript: The Good Parts by Douglas Crockford</li>
+                <li>Eloquent JavaScript by Marijn Haverbeke</li>
+                <li>You Don't Know JS by Kyle Simpson</li>
+                <li>CSS Secrets by Lea Verou</li>
+                <li>HTML and CSS: Design and Build Websites by Jon Duckett</li>
+              </ul>
         </div>
-        <button class="carousel-control prev"></button> <!-- Previous button -->
-        <button class="carousel-control next"></button> <!-- Next button -->
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            const carousel = $(".carousel-inner");
-            const prevBtn = $(".carousel-control.prev");
-            const nextBtn = $(".carousel-control.next");
-
-            let slideWidth = $(".card").outerWidth();
-            let slideIndex = 0;
-
-            nextBtn.click(function () {
-                slideIndex++;
-                carousel.css("transform", `translateX(${-slideWidth * slideIndex}px)`);
-            });
-
-            prevBtn.click(function () {
-                if (slideIndex !== 0) {
-                    slideIndex--;
-                    carousel.css("transform", `translateX(${-slideWidth * slideIndex}px)`);
-                }
-            });
-        });
-    </script>
-
 </body>
-
 </html>
