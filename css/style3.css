@@ -1,19 +1,19 @@
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #efefef;
 }
-.slide-container{
+
+.slide-container {
     max-width: 1190px;
     width: 100%;
     background: green;
@@ -21,27 +21,32 @@ body{
 
 
 }
-.slide-content{
+
+.slide-content {
     margin: 0 40px;
 }
-.card{
-    width: 300px;
+
+.card {
     border-radius: 25px;
     background: #fff;
+    width: 300px !important;
 }
+
 .image-content,
-.card-content{
+.card-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 14px;
 }
-.image-content{
+
+.image-content {
     row-gap: 5px;
     position: relative;
     padding: 25px 0;
 }
-.overlay{
+
+.overlay {
     position: absolute;
     left: 0;
     top: 0;
@@ -50,8 +55,9 @@ body{
     background: #4070f4;
     border-radius: 25px 25px 0 25px;
 }
+
 .overlay::after,
-.overlay::before{
+.overlay::before {
     content: '';
     position: absolute;
     right: 0;
@@ -60,11 +66,13 @@ body{
     width: 40px;
     background: #4070f4;
 }
-.overlay::after{
+
+.overlay::after {
     border-radius: 0 25px 0 0;
     background: #fff;
 }
-.card-image{
+
+.card-image {
     position: relative;
     height: 150px;
     width: 150px;
@@ -72,19 +80,22 @@ body{
     background: #fff;
     padding: 3px;
 }
-.card-image .card-img{
+
+.card-image .card-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid #4070f4;
-} 
-.name{
+}
+
+.name {
     font-size: 20px;
     font-weight: 500;
     color: #333;
 }
-.description{
+
+.description {
     font-size: 14px;
     line-height: 20px;
     color: #707070;
@@ -92,7 +103,8 @@ body{
     margin-top: 15px;
     margin-bottom: 10px;
 }
-.button{
+
+.button {
     border: none;
     font-size: 16px;
     color: #fff;
@@ -103,6 +115,7 @@ body{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.button:hover{
+
+.button:hover {
     background: #265df2;
 }
