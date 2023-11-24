@@ -1,5 +1,5 @@
 // Initialize Swiper
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper-content', {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -13,3 +13,4 @@ var swiper = new Swiper('.swiper-container', {
     },
   });
   
+  swiper();

@@ -16,11 +16,11 @@ body {
 .slide-container {
     max-width: 1190px;
     width: 100%;
-    background: green;
     padding: 25px;
 
 
 }
+
 
 .slide-content {
     margin: 0 40px;
@@ -30,7 +30,11 @@ body {
 .card {
     border-radius: 25px;
     background: #fff;
+    margin-left: 30px;
     width: 300px !important;
+}
+.card:first-child{
+  margin-left: 0 px;
 }
 
 .image-content,
