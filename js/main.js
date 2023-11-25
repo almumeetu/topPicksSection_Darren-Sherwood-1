@@ -1,16 +1,19 @@
-// Initialize Swiper
-var swiper = new Swiper('.swiper-content', {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-      delay: 2500, // Adjust the delay as needed (in milliseconds)
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-  
-  swiper();
+
+
+let swiper = new Swiper(".wrapper", {
+  loop: true,
+  autoplay: true,
+  autoplayTimeout: 1000,
+  autoplayHoverPause: true,
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 200,
+    modifier: 1,
+    slideShadows: false,
+  },
+});

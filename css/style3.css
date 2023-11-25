@@ -1,184 +1,98 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #efefef;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
 }
 
-
-.
-.slide-container {
-    max-width: 1190px;
-    width: 100%;
-    padding: 25px;
-
-
+.wrapper {
+  max-width: 80%;
 }
 
-
-.slide-content {
-    margin: 0 40px;
-    padding: 25px;
+.wrapper .swiper-wrapper {
+  width: 100%;
+  height: 35em;
+  display: flex;
+  align-items: center;
 }
 
-.card {
-    border-radius: 25px;
-    background: #fff;
-    margin-left: 30px;
-    width: 300px !important;
-}
-.card:first-child{
-  margin-left: 0 px;
-}
-
-.image-content,
-.card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 14px;
+.wrapper .swiper-wrapper .card {
+  width: 20em;
+  height: 90%;
+  background: #fff;
+  border-radius: 2em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2em;
 }
 
-.image-content {
-    row-gap: 5px;
-    position: relative;
-    padding: 25px 0;
+.card .image {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 5px solid #4070f4;
+  padding: 3px;
+  margin-bottom: 2em;
 }
 
-.overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background: #4070f4;
-    border-radius: 25px 25px 0 25px;
+.card .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.overlay::after,
-.overlay::before {
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-    height: 40px;
-    width: 40px;
-    background: #4070f4;
+.card .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.overlay::after {
-    border-radius: 0 25px 0 0;
-    background: #fff;
+.card .content .title {
+  font-size: 1.5em;
+  font-weight: 600;
+  position: relative;
+  top: 0.2em;
 }
 
-.card-image {
-    position: relative;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background: #fff;
-    padding: 3px;
+.card .content .name {
+  color: #4070f4;
 }
 
-.card-image .card-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #4070f4;
+.card .content .desc {
+  text-align: center;
+  font-size: 1.1em;
+  margin: 1em 0;
 }
 
-.name {
-    font-size: 20px;
-    font-weight: 500;
-    color: #333;
+.card .content .btn {
+  background: #4070f4;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
 }
 
-.description {
-    font-size: 14px;
-    line-height: 20px;
-    color: #707070;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
+::-webkit-scrollbar {
+  width: 1px;
 }
-
-.button {
-    border: none;
-    font-size: 16px;
-    color: #fff;
-    padding: 8px 16px;
-    background: #4070f4;
-    border-radius: 6px;
-    margin: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.button:hover {
-    background: #265df2;
-}
-
- /*.swiper {
-    width: 100%;
-    height: 100%;
-  }
-
-  .swiper-slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-  }
-  */
-
-  @media only screen and (min-width: 769px) {
-    .swiper-slide:first-child {
-      transition: transform 100ms;
-    }
-
-    .swiper-slide:first-child img {
-      transition: box-shadow 500ms;
-    }
-
-    .swiper-slide.swiper-slide-active:first-child {
-      transform: translateX(50%);
-      z-index: 2;
-    }
-
-    .swiper-slide.swiper-slide-active:first-child img {
-      box-shadow: 0px 32px 80px rgba(0, 0, 0, 0.35);
-    }
-
-    .swiper-slide:nth-child(2) {
-      transition: transform 100ms;
-    }
-
-    .swiper-slide.swiper-slide-next:nth-child(2) {
-      transform: translateX(55%);
-      z-index: 1;
-    }
-
-    .swiper[dir="rtl"] .swiper-slide.swiper-slide-active:first-child {
-      transform: translateX(-50%);
-    }
-
-    .swiper[dir="rtl"] .swiper-slide.swiper-slide-next:nth-child(2) {
-      transform: translateX(-55%);
-    }
-  }
-
