@@ -16,17 +16,17 @@ body {
   align-items: center;
   justify-content: center;
   background: #f4f4f4;
+  width: 1190px !important;
+  margin: o auto !important;
 }
 
 .wrapper {
-  max-width: 70%;
-  overflow: hidden;
+  max-width: 1190px !important;
+  width: 100%;
+
+
 }
-.wrapper .heading h2{
-  font-size: 30px;
-  font-weight: 600;
-  text-align: center;
-}
+
 .wrapper .swiper-wrapper {
   width: 80%;
   height: 35em;
@@ -46,7 +46,6 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  transition: .3s;
 }
 
 .card .image {
@@ -105,3 +104,11 @@ body {
   perspective: 500px !important;
 }
 
+@media screen and (max-width: 779px) {
+
+  .wrapper {
+    max-width: 500px !important;
+    text-align: center;
+    margin: o auto;
+  }
+}
