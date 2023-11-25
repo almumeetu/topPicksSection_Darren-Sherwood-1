@@ -87,15 +87,14 @@ body {
 }
 
 .card .content .btn {
-  background: #4070f4;
-  color: #fff;
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  border: none;
-  padding: 8px 10px;
-  border-radius: 0.5em;
-  cursor: pointer;
+	background: #4070f4;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 500;
+	border: none;
+	padding: 7px 15px;
+	border-radius: 17px;
+	cursor: pointer;
 }
 
 ::-webkit-scrollbar {
