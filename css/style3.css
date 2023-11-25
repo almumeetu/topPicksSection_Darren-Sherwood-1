@@ -19,8 +19,9 @@ body {
 }
 
 .wrapper {
-  max-width: 70%;
-  overflow: hidden;
+	max-width: 100%;
+	overflow: hidden;
+	height: 100vh;
 }
 .wrapper .heading h2{
   font-size: 30px;
@@ -104,3 +105,13 @@ body {
   perspective: 500px !important;
 }
 
+
+
+@media screen and (max-width: 700px) {
+  .wrapper .swiper-wrapper .card {
+    width: 250px;
+    padding: 30px 10px;
+    margin: 0 30px;
+  }
+  
+}
