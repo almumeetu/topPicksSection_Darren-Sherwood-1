@@ -62,10 +62,29 @@ img {
   position: relative;
   overflow: hidden;
 }
-
+.heading {
+	margin-bottom: 40px;
+	color: #333333;
+	font-size: 22px;
+}
 .card__img {
-  width: 328px;
+  width: 300px;
+  height: 200px;
   border-radius: 1.5rem;
+  position: relative;
+}
+.overlay p {
+	font-size: 15px;
+	background: brown;
+	color: #fff;
+	font-weight: 600;
+	padding: 7px 15px;
+	border-radius: 8px;
+}
+.overlay {
+	position: absolute;
+	top: -1px;
+	z-index: 9999;
 }
 
 .card__data {
