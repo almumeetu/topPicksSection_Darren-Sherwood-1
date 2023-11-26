@@ -68,10 +68,11 @@ img {
 	font-size: 22px;
 }
 .card__img {
-  width: 300px;
-  height: 200px;
-  border-radius: 1.5rem;
-  position: relative;
+	width: 300px;
+	height: 200px;
+	border-radius: 1.5rem;
+	position: relative;
+	opacity: 0.7;
 }
 .overlay p {
 	font-size: 15px;
@@ -88,18 +89,18 @@ img {
 }
 
 .card__data {
-  width: 280px;
-  background-color: var(--container-color);
-  padding: 1.5rem 2rem;
-  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
-  border-radius: 1rem;
-  position: absolute;
-  bottom: -9rem;
-  left: 0;
-  right: 0;
-  margin-inline: auto;
-  opacity: 0;
-  transition: opacity 1s 1s;
+	width: 280px;
+	background-color: var(--container-color);
+	padding: 0.5rem 1rem;
+	box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+	border-radius: 1rem;
+	position: absolute;
+	bottom: -9rem;
+	left: 0;
+	right: 0;
+	margin-inline: auto;
+	opacity: 0;
+	transition: opacity 1s 1s;
 }
 
 .card__description {
@@ -207,7 +208,7 @@ img {
 /* For large devices */
 @media screen and (min-width: 1120px) {
   .container {
-    height: 100vh;
+
   }
 
   .card__container {
